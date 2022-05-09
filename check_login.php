@@ -6,7 +6,7 @@ include('connection.php');
 
 try {
     $username     = $_POST['username'];
-    $password      = $_POST['password'];
+    $password      = MD5($_POST['password']);
     
     //query
     $query = $connection->query("SELECT * FROM users WHERE username='$username' AND password='$password'");

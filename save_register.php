@@ -4,7 +4,7 @@ include('connection.php');
 
 $nama_lengkap = $_POST['nama_lengkap'];
 $username     = $_POST['username'];
-$password     = $_POST['password'];
+$password     = MD5($_POST['password']);
 
 //query insert data ke dalam database
 $query = "INSERT INTO users (nama_lengkap, username, password) VALUES ('$nama_lengkap', '$username', '$password')";        
