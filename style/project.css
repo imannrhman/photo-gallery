@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+}
+
+
+
+#content {
+    margin: 100px;
+    flex-basis: 75%;
+}
+
+#content article {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#content h1{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.container{
+    margin: 30px 0px;
+}
+
+.img-article {
+    flex-basis: 15%;
+    border-radius: 16px 56px 0px 16px;
+    max-width: 40%;
+    object-fit: cover;
+}
+
+.article-content {
+    display: flex;
+    flex-basis: 85%;
+    flex-direction: column;
+}
+
+
+.icon {
+    color: #222831;
+
+}
+
+.type{
+    font-weight: 300;
+    font-size: 26px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.article-content h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+ .date{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.article-content p {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.article-content h2,
+p,
+h3,.icon-container {
+    margin-left: 30px;
+}
+
+aside {
+    margin-top: 90px;
+    flex-basis: 25%;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+}
+
+
+.profile {
+    flex-basis: 75%;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile h2 {
+    margin-bottom: 0;
+}
+
+.profile h3 {
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.profile figure {
+    margin: 0 auto;
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.social-media {
+    flex: 25%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.icon-container{
+    margin-bottom: 20px;
+    
+}
+
+.icon-container i {
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+    font-size: 32px;
+}
+
+
+
+.card {
+     box-shadow: 0 4px 24px 0 rgba(103, 151, 255, .1),
+     0 8px 64px 0 rgba(103, 151, 255, .1);
+    border-radius: 16px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.social-media h3{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.list-social-media {
+    display: inline;
+    margin: 0 auto;
+}
+
+.list-social-media a{
+    margin: 10px;
+}
+
+
+.list-social-media img {
+    width: 40px;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #222831;
+}
+
+@media screen and (max-width: 853px) {
+    #content h1 {
+        font-size: 30px;
+    }
+    .welcome h1 {
+        margin-top: 80px;
+        font-size: 50px;
+    }
+
+
+    #content,article{
+        padding: 0;
+        margin: 0;
+    }
+    nav a {
+        font-size: 14px;
+    }
+
+    .article-content {
+        height: 250px; 
+    }
+    
+    .type,.date,.article-content,.icon-container{
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+    
+    
+    .type {
+        font-size: 14px;
+    }
+
+    .article-content h2 {
+        font-size: 17px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .article-content p {
+        margin-top: 5px;
+        font-size: 8px;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .date p {
+        font-size: 10px;
+        
+    }
+
+    .icon-container i {
+        float: inline-end;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .img-article {
+         max-width: 50%;
+    }
+
+    .img-article {
+        border-radius: 16px 36px 0px 16px;
+    }
+    main {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
